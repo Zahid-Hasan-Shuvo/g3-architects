@@ -656,4 +656,8 @@ input {
   .footer-social-icon {
     padding-left: 27px;
   }
+
+  .footer-social-icon i {
+    width: 300px;
+  }
 }
