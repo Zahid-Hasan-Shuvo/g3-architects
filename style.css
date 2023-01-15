@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* navbar and header  section */
@@ -25,7 +25,7 @@
   font-size: 22px;
 }
 
-/* bannar section */
+/* banner section */
 .banner-section {
   padding-top: 100px;
   display: flex;
@@ -49,16 +49,7 @@
   margin-bottom: 20px;
   color: #3a3a3a;
 }
-.explore-btn {
-  padding: 20px;
-  border-radius: 5px;
-  color: aliceblue;
-  background-color: darkgoldenrod;
-  font-size: 20px;
-  border: none;
-  margin-bottom: 30px;
-  margin-left: 220px;
-}
+
 .banner-details {
   display: flex;
   justify-content: center;
@@ -80,6 +71,17 @@
   width: 90%;
   margin: auto;
   padding-bottom: 20px;
+}
+.explore-btn {
+  padding: 20px;
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: darkgoldenrod;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 30px;
+  margin-left: 220px;
+  margin-top: 10px;
 }
 
 /* features section */
@@ -234,11 +236,17 @@ position: relative;
   padding-right: 260px;
 }
 .single-box {
+  transition: all 500ms ease-in-out;
   border: 3px solid yellowgreen;
   padding: 30px;
   height: 200px;
   width: 200px;
 }
+.single-box:hover {
+  box-shadow: 10px 10px 5px #aaaaaa;
+  transform: scale(1.2, 1.2);
+}
+
 .item-center {
   display: flex;
   flex-direction: column;
@@ -353,6 +361,7 @@ input {
   font-size: 20px;
 }
 
+/* Responsive part */
 @media only screen and (max-width: 576px) {
   .nav-menu ul {
     flex-direction: column;
@@ -367,11 +376,12 @@ input {
   .nav-title h1 {
     font-size: 25px;
   }
-  .banner-text {
-    margin-top: 15px;
-    padding: 20px;
-    color: #3a3a3a;
+  .banner-all-text p {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
   }
+
   .banner-sec-text {
     margin-left: 10px;
     margin-bottom: 20px;
@@ -379,15 +389,16 @@ input {
     color: #3a3a3a;
   }
   .banner-title {
-    padding: 10px;
+    /* padding: 5px; */
+    padding-top: 10px;
     font-size: 30px;
     text-align: center;
     margin-left: 0px;
   }
   .banner-sec-title {
     margin-left: 0px;
-    padding: 10px;
-    font-size: 40px;
+    /* padding: 10px; */
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
   }
@@ -406,29 +417,29 @@ input {
     width: 90%;
     margin: auto;
   }
-  .feature-details-section {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
+
   .feature-heading {
     margin-top: 10px;
     font-size: 30px;
     color: #3a3a3a;
   }
   .feature-details-section {
-    width: 100%;
-    padding: 10px;
+    width: 95%;
+    padding: 5px;
+    padding-left: 0px;
+    margin: auto;
   }
-  .feature-facility {
-    margin-top: 50px;
-    flex-direction: column-reverse;
-    padding: 10px;
-  }
+
   .facility-details {
     width: 100%;
     height: 100%;
     padding: 20px;
     text-align: center;
+  }
+  .feature-facility {
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 10px;
   }
 
   .facility {
@@ -449,6 +460,11 @@ input {
     flex-direction: column;
     margin-bottom: 50px;
   }
+  .sponser-details-title {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
   .experience-btn-section {
     position: absolute;
     bottom: 80px;
@@ -464,5 +480,180 @@ input {
     margin-left: 0px;
     margin-bottom: 30px;
     text-align: center;
+  }
+  .sponsor-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  .sponsor-logo img {
+    font-size: 50px;
+    /* width: 50%;
+    height: 50%; */
+    padding-bottom: 12px;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 42, 65);
+  }
+  .footer-heading {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    /* padding-left: -20px; */
+  }
+  .footer-desc-1,
+  .footer-desc-2 {
+    font-size: 15px;
+  }
+  .footer-right-title {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  #input-text {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 7px;
+    border-radius: 5px;
+  }
+  #input-email {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 7px;
+    border-radius: 5px;
+  }
+  #text-area {
+    padding: 10px;
+    font-size: 7px;
+    border-radius: 5px;
+  }
+  .footer-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: chocolate;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .end-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    margin-top: 30px;
+    padding: 30px;
+    width: 100%;
+    padding-right: 30px;
+    margin-bottom: 100px;
+  }
+  .footer-left-side {
+    padding-bottom: 30px;
+  }
+  .end-section {
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+    margin-top: 30px;
+    padding: 20px;
+    width: 80%;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  .facility-details {
+    padding: 5px;
+  }
+
+  .experience-btn {
+    padding: 8px 25px;
+    color: wheat;
+    background-color: chocolate;
+    border-radius: 7px;
+    border-style: none;
+    position: absolute;
+  }
+  .ex-btn-h1 {
+    font-size: 30px;
+  }
+  .ex-btn-p {
+    font-size: 10px;
+  }
+  .end-section p {
+    font-size: 10px;
+    padding-left: 10px;
+  }
+
+  .explore-btn {
+    padding: 20px;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: darkgoldenrod;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 30px;
+    margin-left: 130px;
+    margin-top: 10px;
+  }
+
+  .single-box {
+    transition: all 500ms ease-in-out;
+    border: 3px solid yellowgreen;
+    padding: 18px;
+    height: 140px;
+    width: 140px;
+    margin-bottom: 5px;
+  }
+
+  .sponser-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    padding-bottom: 10px;
+  }
+
+  .feature-details-section h3 {
+    font-size: 30px;
+    color: chocolate;
+    padding-bottom: 10px;
+  }
+
+  .explore-btn-2 {
+    padding: 13px;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: darkgoldenrod;
+    font-size: 13px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  h2 {
+    display: block;
+    font-size: 1.2em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  .activity-title {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+  .footer-details {
+    padding-left: 27px;
+  }
+  .footer-social-icon {
+    padding-left: 27px;
   }
 }
