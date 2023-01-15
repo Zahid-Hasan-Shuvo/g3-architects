@@ -660,4 +660,8 @@ input {
   .footer-social-icon i {
     width: 300px;
   }
+  .facility-detail-heading {
+    border-left: 5px solid orangered;
+    padding-left: 0px;
+  }
 }
