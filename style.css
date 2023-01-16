@@ -361,7 +361,7 @@ input {
   font-size: 20px;
 }
 
-/* Responsive part */
+/* Responsive part  section*/
 @media only screen and (max-width: 576px) {
   .nav-menu ul {
     flex-direction: column;
@@ -491,8 +491,7 @@ input {
   }
   .sponsor-logo img {
     font-size: 50px;
-    /* width: 50%;
-    height: 50%; */
+   
     padding-bottom: 12px;
   }
 
@@ -507,7 +506,7 @@ input {
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 5px;
-    /* padding-left: -20px; */
+   
   }
   .footer-desc-1,
   .footer-desc-2 {
@@ -537,7 +536,7 @@ input {
   .footer-btn {
     padding: 5px 10px;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 14px;
     font-size: 20px;
     font-weight: bold;
     background-color: chocolate;
